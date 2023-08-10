@@ -8,7 +8,6 @@
 <style>
     body {
         margin: 0;
-        /* background-color: blue; */
     }
     .wrapper {
         width: 100%;
@@ -19,12 +18,39 @@
         width: 100%;
         max-width: 600px;
         background-color: beige;
+        box-shadow: 0 0 10px black;
+        border: 4.5px groove #e69e8f;
     }
     th {
-        font-size: 50px;
+        font-size: 25px;
+        text-align: center;
+        height: 100px;
     }
     td {
         text-align: center;
+        background-color: beige;
+    }
+    .star-logo {
+        background-image: url(assets/stars_icon.png);
+        height: 150px;
+        width: 150px;
+    }
+    /* .tester {
+        &::before
+    } */
+    .tester:before {
+        content: icon(add);
+    }
+    .section-1 {
+        background-image: url(assets/swap_meet.jpg);
+        background-size: cover;
+        height: 400px;
+        max-width: 100%;
+        margin: 0;
+        margin-top: 1em;
+        border-top: 2px solid black;
+        justify-content: center;
+        display: block;
     }
 </style>
 </head>
