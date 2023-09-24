@@ -25,15 +25,21 @@
         display: table;
         border-radius: 20px;
     }
+    table {
+        padding: 0;
+        margin: 0;
+    }
     th {
         font-family: 'Comfortaa', cursive;
         font-size: 28px;
         text-align: center;
-        height: 100px;
+        height: 50px;
+        padding-top: 0.5em;
     }
     td {
         text-align: center;
         background-color: beige;
+        /* vertical-align: middle; */
     }
     .star-logo {
         background-image: url(assets/stars_icon.png);
@@ -70,6 +76,28 @@
         padding: 2em 0;
         font-size: 18px;
     }
+    .social-media img{
+        height: 35px;
+        background-color: beige;
+    }
+    .social-media a img:hover{
+        background-color: #FFE2E2;
+        border-radius: 50%;
+    }
+    .social-media a:nth-child(1) img:hover{
+        border-radius: 30%;
+    }
+    .two-columns .column {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .column1, .column2{
+        max-width: 250px;
+    }
+    .td1, .td2 {
+        width: 300px;
+        height: 52px;
+    }
 </style>
 </head>
 
@@ -80,7 +108,30 @@
                 <th><img src="assets/stars_icon.png" alt="" height="50px" style="vertical-align: sub; transform: scaleX(-1);"> Lucky Stars Market <img src="assets/stars_icon.png" alt="" height="50px" style="vertical-align: sub;"></th>
             </tr>
             <tr>
-                <td>San Diego swap meet</td>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns">
+                                <table class="column column1">
+                                    <tr class="tr1">
+                                        <td class="td1">
+                                            <p>San Diego swap meet</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column column2">
+                                    <tr class="tr2">
+                                        <td class="social-media td2">
+                                            <a href="https://www.instagram.com/luckystarsmarket/" target="_blank"><img src="assets/ig-icon.png" alt=""></a>
+                                            <a href="https://www.tiktok.com/@luckystars.market" target="_blank"><img src="assets/tt-icon.png" alt=""></a>
+                                            <a  href="https://linktr.ee/luckystarsmarket" target="_blank"><img class="hello" src="assets/link-icon.png" alt=""></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
             <tr>
                 <td>
